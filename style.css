@@ -1,0 +1,357 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans:200,400&display=swap&subset=cyrillic');
+
+* {
+	box-sizing: border-box;
+	font-style: var(--Roboto);
+}
+
+header,
+section {
+	overflow-x: hidden;
+}
+
+:root {
+	--Worksans: "Work Sans", cursive;
+	--Roboto: "Roboto", cursive;
+	--light-black: #2e2c2caf;
+	--bggradient: linear-gradient(to bottom, rgb(255, 110, 196), rgb(120, 115, 245));
+	--light-gray: rgba(48, 21, 21, 0.5);
+	--border: 1px solid red;
+}
+
+header a {
+	font-family: var(--Roboto);
+	font-size: 0.9em;
+	color: whitesmoke;
+}
+
+header {
+	background: rgb(120, 115, 245);
+	background: var(--bggradient);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background: white;
+	min-width: 160px;
+	box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+header .nav-item:last-child {
+	padding-right: 10.5em;
+}
+
+header .nav-item {
+	padding: 0.9em;
+}
+
+header .navbar-brand {
+	padding-left: 8rem;
+	font-family: var(--Worksans);
+	font-size: 48px;
+	font-weight: 200;
+}
+
+header .nav-link:hover {
+	color: rgb(120, 115, 245);
+}
+
+header .row .col-md-5 {
+	padding: 50px 10px;
+}
+
+header .row .col-md-7 {
+	padding: 100px 10px;
+	color: white;
+}
+
+header .row .col-md-5 img {
+	width: 90%;
+}
+
+header .container .col-md-7 h6 {
+	letter-spacing: 4px;
+	font-family: var(--Roboto);
+}
+
+header .container .col-md-7 h1 {
+	font-family: var(--Worksans);
+	font-size: 72px;
+	font-weight: 200;
+	line-height: 50px;
+}
+
+header .container .col-md-7 p {
+	padding-top: 50px;
+	font-size: 16px;
+}
+
+header .container .col-md-7 button {
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+/* Section 1 */
+
+.section-1 {
+	padding: 100px 0;
+}
+
+.section-1 .row .col-md-6 .pray img {
+	opacity: 0.8;
+	width: 80%;
+	border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+	position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+	position: absolute;
+	top: 70px;
+	left: -180px;
+	background: white;
+	border-radius: 3px;
+	text-align: left;
+	padding: 100px 50px;
+	box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+	font-weight: bold;
+	padding: 0.4em 0;
+	font-size: 2em;
+}
+
+.section-1 .row .col-md-6 .panel p {
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section 2 */
+
+.cover {
+	width: 100%;
+	height: 550px;
+	background: url('../assets/asset.jpg') no-repeat;
+	background-position: -24rem -19rem;
+	background-size: 150%;
+	position: relative;
+}
+
+.cover .content {
+	background: rgba(0, 0, 0, 0.7);
+	height: 100%;
+	width: 100%;
+	padding-top: 200px;
+}
+
+.cover .content .col-md-2 {
+	margin-top: 100px;
+}
+
+.cover .content h1 {
+	margin-top: -100px;
+	font-family: var(--Roboto);
+	color: whitesmoke;
+}
+
+.cover .content p {
+	font-family: var(--Roboto);
+	font-size: 20px;
+	color: white;
+	transform: translate(0, -50%);
+}
+
+.cover .content span {
+	color: rgba(120, 115, 245, 0.7);
+	font-size: 72px;
+}
+
+.numbers .rect {
+	position: relative;
+	z-index: 1;
+	background: white;
+	width: 17rem;
+	height: 12rem;
+	padding-top: 35px;
+	margin: 1rem;
+	border-radius: 0.5em;
+	box-shadow: 1px 2px 50px 0px rgba(120, 115, 245, 0.349);
+}
+
+.numbers {
+	margin-top: -100px;
+}
+
+.numbers .rect h1 {
+	font-size: 5rem;
+	color: rgb(120, 115, 245);
+}
+
+.purchase h1 {
+	padding-top: 100px;
+	padding-bottom: 0.1em;
+}
+
+.purchase p {
+	color: var(--light-black);
+	padding-bottom: 50px;
+	font-size: 20px;
+}
+
+.purchase .cards .card {
+	width: 22rem;
+	margin: 30px;
+}
+
+.cards div {
+	padding: 0;
+	margin: 0;
+}
+
+.cards .title {
+	background: rgba(208, 241, 241, 0.199);
+	padding: 1.4rem 2.5rem;
+	font-size: 20px;
+}
+
+.card .card-text {
+	padding: 2.5rem 3rem;
+	color: var(--light-black);
+}
+
+.card-body .pricing {
+	background: rgba(208, 241, 241, 0.199);
+	border-top-right-radius: 170px;
+	border-top-left-radius: 170px;
+}
+
+.card-body .pricing h1 {
+	font-size: 100px;
+	padding-bottom: 1em 0.5em;
+}
+
+/* Section 3 */
+
+.section-3 {
+	height: 500px;
+	margin-top: 100px;
+	background: var(--bggradient);
+}
+
+.section-3 .col-md-12 h1 {
+	padding: 75px 0 25px 0;
+	color: whitesmoke;
+	font-size: 60px;
+}
+
+.section-3 .col-md-12 p {
+	padding: 0 100px;
+	color: var(--light-gray);
+	font-size: 30px;
+}
+
+.section-3 .desktop {
+	background: white;
+	display: inline-block;
+	border-radius: 3em;
+	padding: 20px 45px;
+	margin: 25px;
+}
+
+.section-3 .desktop h3 {
+	font-size: 4vmin;
+}
+
+.section-3 .desktop p {
+	font-size: 2vmin;
+}
+
+/* Section 4 */
+
+.section-4 .container-fluid {
+	width: auto;
+	height: 500px;
+}
+
+/* Footer */
+
+footer {
+	background: rgba(0, 0, 0, 0.8);
+	overflow-x: hidden;
+	padding: 50px 200px;
+}
+
+footer input {
+	border: none !important;
+}
+
+footer input::placeholder {
+	color: white !important;
+}
+
+footer .input-group .input-group-text {
+	background: var(--bggradient);
+	border: none;
+}
+
+footer .input-group .input-group-text:hover {
+	color: white;
+	border: none;
+}
+
+footer .column i {
+	color: rgb(120, 115, 245);
+	font-size: 32px;
+	padding: 0 5px;
+}
+
+footer .column i:hover {
+	color: rgb(255, 255, 255);
+	font-size: 32px;
+	padding: 0 5px;
+}
+
+/* Sticky class */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.815);
+	z-index: 9999;
+	transition: all 1.5s ease;
+}
+
+.tbldec {
+	text-decoration: line-through;
+}
+
+.tbldec2 {
+	text-decoration: underline;
+}
+
+.card .card-header button {
+	color: rgb(120, 115, 245);
+}
